@@ -26,7 +26,7 @@ public class Ex2_array {
 		//numArr[2] = 65;
 		
 		// 배열의 선언 + 생성 + 초기화 를 한 번에 할 수 있다.
-		int[] numArr = {30, 32, 60};
+		int[] numArr = {30, 32, 60};  // 인덱스 0번부터 채워짐.
 		
 		for(int i = 0; i < numArr.length; i++) {
 			System.out.println(numArr[i]);

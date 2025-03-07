@@ -31,6 +31,48 @@ public class Ex1_homework {
 			
 		} // for
 		
+		
+		/* 선생님 풀이
+		  1.
+		  int i = 0;  // 전역 변수 선언
+		  
+		  for(i = 2; i <= n; i++) {
+		     
+		     if( n % 1 == 0) {
+		         break;
+		         
+		     } // if
+		     
+		  }  // for
+		  
+		  if( i == n ) {
+		      System.out.println(n + "은(는) 소수입니다.");
+		  }else {
+		      System.out.println(n + "은(는) 소수가 아닙니다.");
+		  }
+		     
+		  
+		  2.
+		  int cnt = 0;  // i말고 새로운 전역 변수 만드는 방식
+		  
+		  for(int j = 2; j <= n; j++) {
+		      if( n % j == 0 ) {
+		          cnt++;
+		      
+		      }
+		  
+		  }
+		  
+		  if( cnt == 1 ) {  // cnt = 1과 자기 자신을 제외한 약수의 개수
+		      System.out.println(n + "은(는) 소수입니다.");
+		  }else {
+		      System.out.println(n + "은(는) 소수가 아닙니다.");
+		  }
+		  
+		  
+		  
+		  
+		 */
 				
 	}  // main
 
