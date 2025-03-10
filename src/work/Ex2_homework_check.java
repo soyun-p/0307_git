@@ -11,40 +11,64 @@ public class Ex2_homework_check {
 
 		// 17 42 9 11 6 14
 
-		int[] lotto = new int[6];		
-
-		int num = new Random().nextInt(45) + 1;
-		
+		/* int[] lotto = new int[6];		
 
 
 		for(int i = 0; i < lotto.length; i++) {
-			lotto[i] = num;
-		    System.out.println(lotto[i]);
+			lotto[i] = new Random().nextInt(45) + 1;
+		    
 			
-
 			for(int j = 1; j < i; j++) {
 
 				if( lotto[i] == lotto[j] ) {
 					i--;
 				
 				} // if
-
-
+				
+	
 			}  // inner	
-			
 			
 
 		}	// outer
 		
 		
 		for(int i = 0; i < lotto.length; i++) {
-			System.out.println(lotto[i]);
+			System.out.print(lotto[i] + " ");
 			
-		} // for 2
+		} // for 2 */
 		
 		
+		
+		
+		
+		// 선생님 풀이
+		
+		int[] lotto2 = new int[6];
+		
+		outer:for( int i = 0 ; i < lotto2.length; ) {
+			
+			lotto2[i] = new Random().nextInt(6) + 1;
+			System.out.print(lotto2[i] + " ");
+			
+			i++; // i의 증감식을 for문 안에 썼기 때문에 중복되어도 값이 증가하지 않고 기존 값 그대로 다시 중복 확인할 수 있다.
+			
+			// 중복 체크
+			for( int j = 0; j < i; j++) {
+				
+				if( lotto2[i] == lotto2[j] ) {
+					continue outer;
+					
+				} // if
+				
+				
+			} // for inner
+			
+		} // for outer  
+		
+		
+		// i = 0;  ->  랜덤으로 수를 하나 뽑아 lotto2[0]에
 
-	
+	 
 
 
 
