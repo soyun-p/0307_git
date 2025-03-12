@@ -2,7 +2,7 @@ package work;
 
 import java.util.Random;
 
-public class Ex2_homework_check {
+public class Ex2_homework_lotto_check {
 	public static void main(String[] args) {
 
 		// 1 ~ 45 사이 중복되지 않는 난수를 lotto 배열에 담아 출력.
